@@ -48,6 +48,7 @@ async function runChat(prompt) {
   // ✅ Send the prompt
   const result = await chat.sendMessage(prompt);
   const response = result.response;
+  console.log(response.text());
   return response.text();
 }
 
